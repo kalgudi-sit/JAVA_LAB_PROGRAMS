@@ -17,16 +17,11 @@ class Abc extends JFrame implements ActionListener {
     JLabel l3;
 
     public Abc() {
-        setLayout(new FlowLayout());
-
         l1 = new JLabel("First Number:");
         t1 = new JTextField(20);
-
         l2 = new JLabel("Second Number:");
         t2 = new JTextField(20);
-
         b = new JButton("Add");
-
         l3 = new JLabel("Result");
 
         add(l1);
@@ -38,9 +33,9 @@ class Abc extends JFrame implements ActionListener {
 
         b.addActionListener(this);
 
+        setLayout(new FlowLayout());
         setVisible(true);
         setSize(250, 400);
-
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 
